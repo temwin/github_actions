@@ -89,6 +89,7 @@ module.exports = {
 				: 'static/styles/[name].css',
 		}),
 		new webpack.EnvironmentPlugin({
+			PUBLIC_PATH: '/github_actions/',
 			NODE_ENV: 'development', // значение по умолчанию 'development' если переменная process.env.NODE_ENV не передана
 		}),
 	],
